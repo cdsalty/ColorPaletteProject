@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 bootstrap
 react-copy-to-clipboard
+chroma.js (javascript library used to work with colors) - used inside colorHelpers.js
+
+---
 
 ## Available Scripts
 
