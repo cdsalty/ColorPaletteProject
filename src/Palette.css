@@ -5,3 +5,34 @@
 .Palette-colors {
   height: 90%; /* 90% of it's parent, the .Palette, which is 100vh; */
 }
+
+.slider {
+  width: 340px;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.rc-slider-track {
+  background-color: transparent;
+  /* width: 20px; */
+}
+
+/* the line used to slide on */
+.rc-slider-rail {
+  height: 8px;
+}
+
+/* the circle used to slide */
+.rc-slider-handle,
+.rc-slider-handle:active,
+.rc-slider-handle:hover {
+  background-color: rgb(10, 139, 219);
+  outline: none;
+  border: 2px solid blue;
+  box-shadow: none;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  margin-left: -7px;
+  margin-top: -2px;
+}
