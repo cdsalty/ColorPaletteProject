@@ -1,0 +1,53 @@
+.Navbar {
+  display: flex;
+  align-items: center; /* up and down */
+  justify-content: flex-start;
+  height: 6vh;
+}
+
+.logo {
+  margin-right: 15px;
+  padding: 0 14px;
+  font-size: 22px;
+  background-color: rgba(243, 247, 242, 0.892);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+.slider {
+  width: 340px;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.rc-slider-track {
+  background-color: transparent;
+  /* width: 20px; */
+}
+
+/* the line used to slide on */
+.rc-slider-rail {
+  height: 8px;
+}
+
+/* the circle used to slide */
+.rc-slider-handle,
+.rc-slider-handle:active,
+.rc-slider-handle:hover {
+  background-color: rgb(10, 139, 219);
+  outline: none;
+  border: 2px solid rgb(10, 139, 219);
+  box-shadow: none;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  margin-left: -7px;
+  margin-top: -2px;
+}

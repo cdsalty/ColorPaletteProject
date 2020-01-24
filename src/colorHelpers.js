@@ -54,7 +54,7 @@ function generatePalette(starterPalette) {
     // for each color in the starterPalette,
     // take the lightest scale(number) and assign to 50. repeat up to the darkest shade at 900;
     let scale = getScale(color.color, 10).reverse(); // need to reverse and get ten colors
-    // ****** NEED TO REVIEW THIS MORE..... *********** lit i 'in' scale
+    // ****** NEED TO REVIEW THIS MORE..... *********** for (let i 'in' scale
     for (let i in scale) {
       // for each iteration of the scale of 10, generate a newPaslette color
       newPalette.colors[levels[i]].push({
@@ -99,7 +99,7 @@ function getScale(hexColor, numberOfColors) {
 }
 
 // MUST CALL and EXPORT
-export { generatePalette };
+export {generatePalette};
 
 /*
 NOTE:
