@@ -12,6 +12,15 @@ Navbar
 */
 
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {format: 'hex'};
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(e) {
+    this.props.handleChange(e.target.value);
+    this.setState({format: e.target.value});
+  }
   render() {
     // I could have destructured by doing: const { level, changeLevel } = this.props;
     return (
@@ -35,7 +44,8 @@ class Navbar extends Component {
           </div>
         </div>
         <div className="select-container">
-          <Select>
+          {/* material pre-setup */}
+          <Select value={this.state.format} onChange={this.handleChange}>
             <MenuItem value="hex">HEX - #ffffff</MenuItem>
             <MenuItem value="rgb">RGB - rgb(255,255,255)</MenuItem>
             <MenuItem value="rgba">RGBA - rgba(255,255,255,1.0)</MenuItem>
@@ -47,3 +57,9 @@ class Navbar extends Component {
 }
 
 export default Navbar;
+
+/*
+value= {this.state.format}: this is used to keep the selected input showing in the dropdown box.
+
+
+*/
