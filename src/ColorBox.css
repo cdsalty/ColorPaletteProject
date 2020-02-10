@@ -30,6 +30,7 @@
   cursor: pointer;
 }
 
+/* To make the copy button only appear when hovering the different color boxes */
 .ColorBox:hover .copy-button {
   opacity: 1;
   transition: 0.4s;
